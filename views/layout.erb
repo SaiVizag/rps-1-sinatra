@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra RPS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   </head>
 
-  <body>
-
-    <%= yield %>
-
+  <body class="pico">
+    <div class="container">
+      <header>
+        <div>
+          <nav>
+            <div><a href="/">Home</a></div>
+            <div><a href="/rock">Play Rock</a></div>
+            <div><a href="/paper">Play Paper</a></div>
+            <div><a href="/scissors">Play Scissors</a></div>
+          </nav>
+        </div>
+      </header>
+      
+      <main>
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>
